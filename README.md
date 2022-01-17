@@ -5,6 +5,10 @@
   * Java JDK version 8 or newer
   * IDE It can be Netbeans, Eclipse, Intelij
 ##  How to run the program:
+  Clone this project with the following command in a folder in your pc:
+  ```bash
+  git clone https://github.com/JonathanOrtz/COM528_AE2_project.git
+  ```
   Before run the project you need to clean and built the project with the following command
   ```bash
   mvn clean install
