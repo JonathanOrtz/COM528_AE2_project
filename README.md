@@ -18,5 +18,44 @@
   mvn spring-boot:run
   ```
   It must be used this command to run the web module in the http://localhost:8080/index.html port.
-  ## Project purpose
-  This java web project is a shopping cart system that allow user(registered, anonymous)
+## Project purpose
+  This java web project is a shopping cart system that allow users (registered, anonymous) chose items in the store and add them to the basket. Then a transaction will be done       with a bank api. Only users registered can checkout so the system must give a option to be registered. Aditionally there are adminitrators that will have the capability of add,   remove items and stock, add or disable users.
+## PROJECT FEATURES
+  ### Main page
+  * visualise item lists
+  * add/remove items from basket
+  * Check total price
+  * check checkout
+  ### User page
+  * check previous orders
+  * disable account
+  ### admin page
+  * check users orders
+  * disble orders
+  * add users
+  * option to go to a page where items/stock will be updated
+  ### register page
+  * add details
+  * log in
+  ### items
+  * add new items
+  * removve items
+  * reduce stock
+  * add stock
+  * when a order is made the items added to that basket are reduced from the item stock
+
+## USE CASES
+  | Number | actor |description| system response|
+| ------------- | ------------- |-----------|-------|
+| Use case 1 | users |The user enter to the page |the system redirect to the main page(Home)|
+| Use case 2 | users |The users are able to add items to the basket|the system will add those items to the basket and reduce those items from the stock|
+| Use case 3 | user (admin/registered) |after added those items it will be able to check out|The system will let checkout checking is the users are registered.|
+| Use case 4 | Anonymous user |with the objective of checkout the anonymous user should sing in|the system will redirect to the log in/sing in page to register|
+| Use case 5 | Admin/registered users |Be able to modify your data|The system must let user registered their details and the admin can changed details of all users|
+| Use case 6 | admin |Admin user has the capability of change items and items stock|system will add/remove items or create new items in the store|
+| Use case 7 | The admin/user registered |Be able to desactivate account|The system will delete users that desactivate their account but it will keep their information for admin view|
+| Use case 8 | admin |Admin be able to change the role of the users|the system will change the role of the user from admin to desactivated|
+
+
+## USE CASE DIAGRAM
+![image](https://user-images.githubusercontent.com/72144755/149768351-e90c6c08-ffbe-4439-b890-bb7ad502fc44.png)
